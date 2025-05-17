@@ -16,6 +16,7 @@ vim.keymap.set('v', 'y', 'ygv<Esc>')
 vim.keymap.set('n', '<leader>oo', 'o<Esc>')
 vim.keymap.set('n', '<leader>OO', 'O<Esc>')
 vim.keymap.set('n', '<leader>oi', 'i<CR><Esc>')
+vim.keymap.set('n', '<leader>op', 'o<Esc>p')
 
 vim.keymap.set('n', 'gp', '`[v`]')
 
