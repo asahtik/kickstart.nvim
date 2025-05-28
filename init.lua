@@ -796,6 +796,9 @@ require('lazy').setup({
         '<leader>f',
         function()
           require('conform').format { async = true, lsp_format = 'fallback' }
+          if vim.fn.exists 'GuessIndent' then
+            vim.cmd 'GuessIndent'
+          end
         end,
         mode = '',
         desc = '[F]ormat buffer',
