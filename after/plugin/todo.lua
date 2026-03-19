@@ -1,9 +1,9 @@
 require('todo-comments').setup {
   highlight = {
-    pattern = [[.*<(KEYWORDS)(\(.+\))?\s*:?]],
+    pattern = [[.*<(KEYWORDS):]],
     keyword = 'bg',
   },
   search = {
-    pattern = [[\b(KEYWORDS)(\(.+\))?\b]],
+    pattern = [[\b(KEYWORDS):]],
   },
 }
